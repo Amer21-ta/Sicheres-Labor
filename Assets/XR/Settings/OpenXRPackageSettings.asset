@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a24be4b5ebfe5f4d8ed1de9b25cb7aa, type: 3}
   m_Name: HandCommonPosesInteraction Android
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.Interactions.HandCommonPosesInteraction
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Hand Interaction Poses
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.handinteractionposes
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a24be4b5ebfe5f4d8ed1de9b25cb7aa, type: 3}
   m_Name: HandCommonPosesInteraction Standalone
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.Features.Interactions.HandCommonPosesInteraction
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Hand Interaction Poses
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.handinteractionposes
@@ -419,6 +419,7 @@ MonoBehaviour:
   - {fileID: -659507045598184341}
   - {fileID: -8202561138192483171}
   - {fileID: -5892472557812697212}
+  - {fileID: 5827404440913421846}
   - {fileID: 3681489432214024591}
   - {fileID: -1128493626442184883}
   - {fileID: 7647069629918275743}
@@ -429,6 +430,7 @@ MonoBehaviour:
   - {fileID: -5090565479249103649}
   - {fileID: 8856895029888253646}
   - {fileID: 6646016762347322472}
+  - {fileID: -3036109348340767137}
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 0
@@ -548,6 +550,7 @@ MonoBehaviour:
   - {fileID: -7889936395210424618}
   - {fileID: -8979107441993665757}
   - {fileID: -8125866071022526343}
+  - {fileID: 3116888675525950562}
   - {fileID: -4758152423095528424}
   - {fileID: -8987677222623237137}
   - {fileID: 6428679846065479084}
@@ -558,6 +561,7 @@ MonoBehaviour:
   - {fileID: 3377663721844969621}
   - {fileID: 8549240961150209877}
   - {fileID: 1409179915489843174}
+  - {fileID: 2983040545859824291}
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 1
