@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Menu Hands Follow Preset
   m_EditorClassIdentifier: 
   m_Comments: 
-  m_ReadOnly: 1
+  m_ReadOnly: 0
   m_Value:
     rightHandLocalPosition: {x: 0.17, y: 0, z: 0.1}
     leftHandLocalPosition: {x: -0.17, y: 0, z: 0.1}
