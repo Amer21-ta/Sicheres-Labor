@@ -5766,6 +5766,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1576580263}
+  - component: {fileID: 1576580264}
   m_Layer: 0
   m_Name: Schrank
   m_TagString: Untagged
@@ -5782,7 +5783,7 @@ Transform:
   m_GameObject: {fileID: 1576580262}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.21925998, y: 0, z: -1.9665895}
+  m_LocalPosition: {x: -0.44, y: -0.17, z: -1.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5798,6 +5799,27 @@ Transform:
   - {fileID: 1314670625}
   m_Father: {fileID: 1498312893}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1576580264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576580262}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3901331, y: 2.841307, z: 1.0999999}
+  m_Center: {x: 0.9500667, y: 1.4861726, z: 2.03}
 --- !u!4 &1589447628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6768225281626788248, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
