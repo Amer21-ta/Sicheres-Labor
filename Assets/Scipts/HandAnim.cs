@@ -1,0 +1,25 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class HandAnim : MonoBehaviour
+{
+    public InputActionProperty triggerValue;
+    public InputActionProperty gripValue;
+
+    public Animator handAnim;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+       float trigger=triggerValue.action.ReadValue<float>(); 
+       float grip=gripValue.action.ReadValue<float>(); 
+
+       handAnim.SetFloat("Trigger",trigger);
+       handAnim.SetFloat("Grip",grip);
+    }
+}
