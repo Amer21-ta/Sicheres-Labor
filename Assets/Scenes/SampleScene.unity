@@ -299,6 +299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1720c98616a0f194dae551fe7645b49b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -315,6 +319,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1818089558}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1818089560}
   m_SourcePrefab: {fileID: 100100000, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
 --- !u!4 &235696574 stripped
 Transform:
@@ -927,6 +934,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &575374644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 575374645}
+  m_Layer: 0
+  m_Name: HeadTar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &575374645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575374644}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.08, z: -0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1161540247}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &584569081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4042427859692680568, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
@@ -978,11 +1016,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -2072040086291044643, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
   m_PrefabInstance: {fileID: 215028490}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &680335857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: XRI Left Interaction/Select Value
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_ActionId: e6005f29-e4c1-4f3b-8bf7-3a28bab5ca9c
 --- !u!4 &693463954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8725540660313892278, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
   m_PrefabInstance: {fileID: 215028490}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &718594198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: XRI Right Interaction/Select Value
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_ActionId: 39bbf1ac-21a3-413d-90f6-6dbf6efeaabe
 --- !u!4 &725180445 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1092408308860062549, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
@@ -1044,15 +1110,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743946718}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.08, y: 0.001, z: -0.035}
+  m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
+  m_LocalPosition: {x: 0.32, y: 0.001, z: 0.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 298865560}
   - {fileID: 196829473}
+  - {fileID: 2093967231}
   m_Father: {fileID: 1567870389}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
 --- !u!114 &743946720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1312,6 +1379,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6502182839619065283, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
   m_PrefabInstance: {fileID: 215028490}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1115922523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: XRI Right Interaction/Activate Value
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_ActionId: c3ca6ed7-3d25-44a2-b1d8-5be4eb699370
 --- !u!1 &1133718142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,7 +1456,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 575374645}
   m_Father: {fileID: 1567870389}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1161540248
@@ -1615,6 +1697,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -7219772299731422950, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
   m_PrefabInstance: {fileID: 215028490}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1276497181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1276497182}
+  m_Layer: 0
+  m_Name: LeftHandTar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1276497182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276497181}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.53567934, y: 0.46157086, z: 0.53567934, w: 0.46157086}
+  m_LocalPosition: {x: -0.046, y: -0.01, z: -0.112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1730337242}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 98.5}
 --- !u!4 &1277297889 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6857788192064577062, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
@@ -1758,7 +1871,7 @@ Transform:
   m_GameObject: {fileID: 1394261180}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.67, y: 0.36, z: -0.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2183,15 +2296,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730337241}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.2, y: 0.001, z: -0.04}
+  m_LocalRotation: {x: -0, y: -0, z: 0.25881997, w: 0.9659256}
+  m_LocalPosition: {x: -0.27776515, y: 0.0050879717, z: 0.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 50474872}
   - {fileID: 505152651}
+  - {fileID: 1276497182}
   m_Father: {fileID: 1567870389}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
 --- !u!114 &1730337243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2414,22 +2528,93 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IKTargetFollowVRRig
   turnSmoothness: 0.1
   head:
-    vrTarget: {fileID: 0}
-    ikTarget: {fileID: 0}
+    vrTarget: {fileID: 575374645}
+    ikTarget: {fileID: 1071733737}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   leftHand:
-    vrTarget: {fileID: 0}
-    ikTarget: {fileID: 0}
+    vrTarget: {fileID: 1276497182}
+    ikTarget: {fileID: 731844741}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   rightHand:
-    vrTarget: {fileID: 0}
-    ikTarget: {fileID: 0}
+    vrTarget: {fileID: 2093967231}
+    ikTarget: {fileID: 632500209}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
-  headBodyPositionOffset: {x: 0, y: 0, z: 0}
+  headBodyPositionOffset: {x: 0, y: -0.54, z: 0}
   headBodyYawOffset: 0
+--- !u!95 &1818089559 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
+  m_PrefabInstance: {fileID: 215028490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1818089560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818089553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a144f4019577a4684e3c370e321322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimateOnInput
+  animationInputs:
+  - animationPropertyName: Right Pinch
+    action:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Action
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: b4dabd88-26d2-45ad-a170-df3ecfeb6fe5
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings: []
+        m_Flags: 0
+      m_Reference: {fileID: 1115922523}
+  - animationPropertyName: 'Right Grab '
+    action:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Action
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: b4dabd88-26d2-45ad-a170-df3ecfeb6fe5
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings: []
+        m_Flags: 0
+      m_Reference: {fileID: 718594198}
+  - animationPropertyName: Left Pinch
+    action:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Action
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: b4dabd88-26d2-45ad-a170-df3ecfeb6fe5
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings: []
+        m_Flags: 0
+      m_Reference: {fileID: 1870538034}
+  - animationPropertyName: Left Grab
+    action:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Action
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: b4dabd88-26d2-45ad-a170-df3ecfeb6fe5
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings: []
+        m_Flags: 0
+      m_Reference: {fileID: 680335857}
+  animator: {fileID: 1818089559}
 --- !u!4 &1827588884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 366175167995203695, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
@@ -2642,6 +2827,20 @@ MonoBehaviour:
     m_HintWeight: 1
     m_MaintainTargetPositionOffset: 0
     m_MaintainTargetRotationOffset: 0
+--- !u!114 &1870538034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: XRI Left Interaction/Activate Value
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_ActionId: 0c3d0ec9-85a1-45b3-839b-1ca43f859ecd
 --- !u!114 &1932690449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2739,6 +2938,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ActionId: c4990d70-7b8a-4ce1-b03c-da86716b8352
+--- !u!1 &2093967230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2093967231}
+  m_Layer: 0
+  m_Name: RightHandTar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2093967231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093967230}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.53567934, y: 0.4615709, z: 0.53567934, w: -0.4615709}
+  m_LocalPosition: {x: 0.046, y: -0.01, z: -0.112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 743946719}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: -98.5}
 --- !u!4 &2102568671 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7078722787440015773, guid: 6e1a536d24338f448bed218f9f353be3, type: 3}
