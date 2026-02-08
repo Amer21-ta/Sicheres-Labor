@@ -10,7 +10,7 @@ public class VRMenuController : MonoBehaviour
     public void OnStartGame()
     {
         // Spiel starten
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("LernenRaum");
     }
 
     public void OnQuitGame()
