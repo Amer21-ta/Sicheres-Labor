@@ -3,25 +3,28 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float Health;
-    public Scrollbar HealthScroll;
+    public float maxHealth = 100f;
+    public float currentHealth;
 
-    public void TakeDamage(int damage)
+    public Slider healthBar;
+
+    void Start()
     {
-        Health -= damage;
+        currentHealth = maxHealth;
+        healthBar.maxValue = maxHealth;
+        healthBar.value = currentHealth;
+    }
 
-        HealthScroll.size = Health/100;
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        healthBar.value = currentHealth;
 
-        if (Health <= 0)
+        if (currentHealth <= 0)
         {
-            Die();
+            Debug.Log("Player Dead");
         }
     }
-    void Die()
-    {
-        Debug.Log("Spieler ist tot!");
-        // Hier Code für Spieler-Tod (z.B. Respawn, Game Over)
-    }
-
-  
 }
+
+
