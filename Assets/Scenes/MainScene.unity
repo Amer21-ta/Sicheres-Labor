@@ -9989,7 +9989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dad718786e9244090a2ac5b306a9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameTimer
-  timeRemaining: 300
+  timeRemaining: 360
   timerIsRunning: 0
   timeText: {fileID: 1643191709}
 --- !u!4 &390038498
@@ -10000,12 +10000,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390038496}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.53742, y: 1.11432, z: 4.96904}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.00425, y: -0.76204, z: 5.09159}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1226843215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &392788662
 MonoBehaviour:
@@ -11630,7 +11630,7 @@ RectTransform:
   m_Children:
   - {fileID: 1643191711}
   - {fileID: 571666677}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1226843215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -32944,6 +32944,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da8d6c6ca953aa24a924db0a93d368ec, type: 3}
   m_PrefabInstance: {fileID: 1223344715}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1226843214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1226843215}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1226843215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226843214}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.46683, y: 1.87636, z: -0.12255}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 390038498}
+  - {fileID: 480530176}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1227501073 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9028627854349766800, guid: 24c728c68968f6447b856666f27564a5, type: 3}
@@ -56209,7 +56242,6 @@ SceneRoots:
   - {fileID: 868495210}
   - {fileID: 772508021}
   - {fileID: 193290328}
-  - {fileID: 480530176}
   - {fileID: 198554973}
-  - {fileID: 390038498}
   - {fileID: 1046757771}
+  - {fileID: 1226843215}

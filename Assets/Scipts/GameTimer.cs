@@ -31,6 +31,7 @@ public class GameTimer : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
                 GameOver();
+            
             }
         }
     }
@@ -48,11 +49,9 @@ public class GameTimer : MonoBehaviour
 
     void GameOver()
     {
-        // Methode 1: Das Spiel beenden (funktioniert nicht im Editor, nur im Build)
-        Application.Quit();
-        Debug.Log("Spiel beendet");
 
-        // Methode 2: Alternativ, Szene neu laden oder GameOver-Panel aktivieren
-        // SceneManager.LoadScene("GameOverScene");
+           //Szene neu laden oder GameOver-Panel aktivieren
+           SceneManager.LoadScene("GameOverScene");
     }
+    
 }
