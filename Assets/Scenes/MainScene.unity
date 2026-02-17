@@ -3546,11 +3546,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ddd4e0df3ec62434ebc8a1ed9d649589, type: 3}
   m_PrefabInstance: {fileID: 1233878396}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &112122820 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5597787660777115194, guid: 214ab4ec399ec8640be4a23d8063653c, type: 3}
-  m_PrefabInstance: {fileID: 9145513237754075083}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &112122821 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5073021354553913731, guid: 214ab4ec399ec8640be4a23d8063653c, type: 3}
@@ -10073,8 +10068,8 @@ HingeJoint:
   serializedVersion: 3
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: -0.16, y: 1.54, z: 0}
-  m_Axis: {x: 0, y: 17.6, z: 0}
+  m_Anchor: {x: -0.09, y: 1.69, z: 0}
+  m_Axis: {x: 0, y: 15.26, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0.19, y: 0.14, z: -0.42}
   m_UseSpring: 1
@@ -22159,8 +22154,8 @@ HingeJoint:
   serializedVersion: 3
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: -0.16, y: 1.54, z: 0}
-  m_Axis: {x: 0, y: 17.6, z: 0}
+  m_Anchor: {x: -0.09, y: 1.69, z: 0}
+  m_Axis: {x: 0, y: 15.26, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0.19, y: 0.14, z: -0.42}
   m_UseSpring: 1
@@ -43050,7 +43045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8651ed8143c51b343814fe4e487a6f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParticleTrigger
-  particleSystem: {fileID: 1710926191}
 --- !u!65 &991771457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44455,8 +44449,8 @@ HingeJoint:
   serializedVersion: 3
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: -0.16, y: 1.54, z: 0}
-  m_Axis: {x: 0, y: 17.6, z: 0}
+  m_Anchor: {x: -0.09, y: 1.69, z: 0}
+  m_Axis: {x: 0, y: 15.26, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0.19, y: 0.14, z: -0.42}
   m_UseSpring: 1
@@ -46030,8 +46024,8 @@ HingeJoint:
   serializedVersion: 3
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: -0.16, y: 1.54, z: 0}
-  m_Axis: {x: 0, y: 17.6, z: 0}
+  m_Anchor: {x: -0.09, y: 1.69, z: 0}
+  m_Axis: {x: 0, y: 15.26, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0.19, y: 0.14, z: -0.42}
   m_UseSpring: 1
@@ -66626,7 +66620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8651ed8143c51b343814fe4e487a6f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParticleTrigger
-  particleSystem: {fileID: 112122820}
 --- !u!65 &1673672929
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68173,11 +68166,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1971085608484540914, guid: 90dbb427ac5963541b1cdbc7520999e3, type: 3}
   m_PrefabInstance: {fileID: 1709801115}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1710926191 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5597787660777115194, guid: 214ab4ec399ec8640be4a23d8063653c, type: 3}
-  m_PrefabInstance: {fileID: 1621567843}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1710926193 stripped
 Transform:
@@ -81578,8 +81566,8 @@ HingeJoint:
   serializedVersion: 3
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: -0.16, y: 1.54, z: 0}
-  m_Axis: {x: 0, y: 17.6, z: 0}
+  m_Anchor: {x: -0.09, y: 1.69, z: 0}
+  m_Axis: {x: 0, y: 15.26, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0.19, y: 0.14, z: -0.42}
   m_UseSpring: 1

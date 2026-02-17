@@ -11,11 +11,11 @@ public class SimpleDialogue : MonoBehaviour
     
     // Dialog-Zeilen
     public string[] messages = {
-        "Hallo!",
-        "Wie geht es dir?",
-        "Schön dich zu sehen!",
-        "Das ist der letzte Text",
-        "Und jetzt geht's von vorne los!"
+        "Mehr Info!!!",
+        "Lies die vier Textblöcke.",
+        "Dort stehen die Geräte, mit denen du zu tun hast.",
+        "Du hast 5 Minuten Zeit.",
+        "Verschwende deine Zeit nicht und beantworte die Fragen."
     };
     
     private int currentMessage = 0;
