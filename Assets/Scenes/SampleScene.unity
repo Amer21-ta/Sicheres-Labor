@@ -807,7 +807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337b08643643fc44dba83e8ea6773b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  player: {fileID: 426323667}
   explosion: {fileID: 1676291998}
   triggerDistance: 3
 --- !u!199 &1676291997
