@@ -916,7 +916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98dad718786e9244090a2ac5b306a9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameTimer
-  timeRemaining: 240
+  timeRemaining: 300
   timerIsRunning: 0
   timeText: {fileID: 1623443756}
 --- !u!1 &87827223

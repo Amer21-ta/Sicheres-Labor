@@ -1,25 +1,63 @@
 using UnityEngine;
 using TMPro;
-using System.Collections.Generic;  // Wichtig für HashSet!
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class XRScoreZone : MonoBehaviour
 {
     public int score = 0;
+    public int winScore = 1000;
+
     public TextMeshProUGUI scoreText;
-    
-    // Das ist die ganze Zauberei - nur eine Zeile!
+    public AudioSource winSound;
+
     private HashSet<GameObject> scoredObjects = new HashSet<GameObject>();
+    bool won = false;
+
+    void Start()
+    {
+        // Falls schon gespeichert (z.B. nach Restart)
+        score = PlayerPrefs.GetInt("Score", 0);
+        scoreText.text = "Score: " + score;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Nur 3 Bedingungen:
-        // 1. Richtiger Tag? 
-        // 2. Noch nicht im HashSet?
+        if (won) return;
+
         if (other.CompareTag("XRObject") && !scoredObjects.Contains(other.gameObject))
         {
-            scoredObjects.Add(other.gameObject);  // Objekt merken
-            score += 10;                          // Punkte geben
-            scoreText.text = "Score: " + score;   // Anzeige updaten
+            scoredObjects.Add(other.gameObject);
+
+            score += 10;
+            scoreText.text = "Score: " + score;
+
+            // Score speichern
+            PlayerPrefs.SetInt("Score", score);
+
+            if (score >= winScore)
+            {
+                Win();
+            }
         }
+    }
+
+    void Win()
+    {
+        won = true;
+
+        // Finalen Score speichern
+        PlayerPrefs.SetInt("FinalScore", score);
+
+        // Sound abspielen
+        winSound.Play();
+
+        // Nach 2 Sekunden WinScene laden
+        Invoke(nameof(LoadWinScene), 2f);
+    }
+
+    void LoadWinScene()
+    {
+        SceneManager.LoadScene("WinScene");
     }
 }
