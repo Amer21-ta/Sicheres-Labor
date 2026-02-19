@@ -17,8 +17,8 @@ public class XRScoreZone : MonoBehaviour
     void Start()
     {
         // Falls schon gespeichert (z.B. nach Restart)
-        score = PlayerPrefs.GetInt("Score", 0);
-        scoreText.text = "Score: " + score;
+        score = PlayerPrefs.GetInt("Punkte", 0);
+        scoreText.text = "Punkte: " + score;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,10 +30,10 @@ public class XRScoreZone : MonoBehaviour
             scoredObjects.Add(other.gameObject);
 
             score += 10;
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Punkte: " + score;
 
             // Score speichern
-            PlayerPrefs.SetInt("Score", score);
+            PlayerPrefs.SetInt("Punkte", score);
 
             if (score >= winScore)
             {

@@ -7,7 +7,6 @@ public class ExplosionDamage : MonoBehaviour
 
     public void DealDamage()
     {
-        Debug.Log("💥 Damage Zone aktiv!");
         
         // Finde Player Health Component
         PlayerHealth playerHealth = FindObjectOfType<PlayerHealth>();
@@ -16,22 +15,16 @@ public class ExplosionDamage : MonoBehaviour
         {
             // Distanz prüfen
             float distance = Vector3.Distance(transform.position, playerHealth.transform.position);
-            Debug.Log("Distanz zum Player: " + distance);
+            
             
             if (distance <= damageRadius)
             {
                 playerHealth.TakeDamage(damageAmount);
-                Debug.Log("🔥 Schaden zugefügt: " + damageAmount);
+               
             }
-            else
-            {
-                Debug.Log("👎 Player zu weit weg: " + distance + " > " + damageRadius);
-            }
+            
         }
-        else
-        {
-            Debug.LogError("❌ PlayerHealth nicht gefunden!");
-        }
+       
     }
 
     void OnDrawGizmosSelected()

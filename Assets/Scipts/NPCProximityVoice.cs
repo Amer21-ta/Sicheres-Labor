@@ -4,30 +4,37 @@ public class NPCProximityVoice : MonoBehaviour
 {
     public float talkDistance = 3f;
 
-    AudioSource audioSrc;
-    Transform playerCam;
-
-    bool wasInRange = false;
+    private AudioSource audioSrc;
+    private Transform playerCam;
+    private bool wasInRange = false;
 
     void Start()
     {
         audioSrc = GetComponent<AudioSource>();
-        playerCam = Camera.main.transform;
+
+        GameObject camObj = GameObject.FindWithTag("MainCamera");
+        if (camObj != null)
+        {
+            playerCam = camObj.transform;
+        }
+        else
+        {
+            Debug.LogError("MainCamera not found!");
+        }
     }
 
     void Update()
     {
-        float d = Vector3.Distance(transform.position, playerCam.position);
+        if (playerCam == null) return;
 
+        float d = Vector3.Distance(transform.position, playerCam.position);
         bool inRange = d < talkDistance;
 
-        // Player kommt NEU rein
         if (inRange && !wasInRange)
         {
             audioSrc.Play();
         }
 
-        // Player geht raus
         if (!inRange && wasInRange)
         {
             audioSrc.Stop();

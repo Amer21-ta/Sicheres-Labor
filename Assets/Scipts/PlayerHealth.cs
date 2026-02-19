@@ -41,6 +41,6 @@ public class PlayerHealth : MonoBehaviour
 
     void LoadGameOver()
     {
-        SceneManager.LoadScene("DieSCene");
+        SceneManager.LoadScene("TutScene");
     }
 }
